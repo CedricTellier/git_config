@@ -40,18 +40,19 @@ gc()
     git commit -m "$*"
 }
 
-# create release zip archive file and store the m into NAS and dropBox
-release()
+# See differences for local modified files
+gd()
 {
-    git release "$*"
+    git diff
 }
 
-# logging last modification on the current branch
-gl()
+# reset all local modified files
+grh()
 {
-    git log
+    git reset --hard
 }
 
+# Personnal display in git bash
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
