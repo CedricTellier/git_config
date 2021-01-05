@@ -52,6 +52,16 @@ grh()
     git reset --hard
 }
 
+# Clear cache
+grmc() 
+{
+    git add .
+    git rm -r --cached .
+    git add .gitignore
+    git add .
+    git status
+}
+
 # Personnal display in git bash
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
