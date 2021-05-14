@@ -1,6 +1,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt jandedobbeleer
+
 function Get-GitStatus() {  
 	& git status
 }
