@@ -33,14 +33,14 @@ NEW-Alias -Name gp -Value Get-GitPull -Force -Option AllScope
 
 # Commit and push files
 function Get-GitCommitPush() {
-	& git commit -m "$*"
+	& git commit -m "$args"
 	& git push
 }
 NEW-Alias -Name gcp -Value Get-GitCommitPush -Force -Option AllScope
 
 # commit files with message
 function Get-GitCommit() {
-	& git commit -m "$*"
+	& git commit -m "$args"
 }
 NEW-Alias -Name gc -Value Get-GitCommit -Force -Option AllScope
 
