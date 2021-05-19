@@ -1,0 +1,79 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+	"blocks": [
+	  {
+		"alignment": "left",
+		"segments": [
+		  {
+			"background": "#ffffff",
+			"foreground": "#100e23",
+			"powerline_symbol": "",
+			"properties": {
+			  "display_host": false,
+			  "prefix": "  ",
+			  "postfix": " "
+			},
+			"style": "powerline",
+			"type": "session"
+		  },
+		  {
+			"background": "#91ddff",
+			"foreground": "#100e23",
+			"powerline_symbol": "",
+			"properties": {
+			  "folder_icon": "",
+			  "folder_separator_icon": "  ",
+			  "home_icon": "",
+			  "style": "agnoster"
+			},
+			"style": "powerline",
+			"type": "path"
+		  },
+		  {
+			"background": "#38ff95",
+			"foreground": "#193549",
+			"powerline_symbol": "",
+			"properties": {
+			  "ahead_and_behind_color": "#FFFF00",
+			  "ahead_color": "#ff9248",
+			  "behind_color": "#FFFF00",
+			  "display_stash_count": true,
+			  "display_upstream_icon": true,
+			  "local_changes_color": "#FFFF00",
+			  "stash_count_icon": " ",
+			  "status_colors_enabled": true
+			},
+			"style": "powerline",
+			"type": "git"
+		  },
+		  {
+			"background": "#ff8080",
+			"foreground": "#ffffff",
+			"powerline_symbol": "",
+			"style": "powerline",
+			"type": "exit"
+		  }
+		],
+		"type": "prompt"
+	  },
+	  {
+		"segments": [
+		  { 
+			"background": "#ffffff",
+			"foreground": "#111111",
+			"invert_powerline": true,
+			"leading_diamond": "",
+			"style": "diamond",
+			"trailing_diamond": "",
+			"type": "time"
+		  }
+		],
+		"type": "rprompt"
+	  }
+	],
+	"console_title": false,
+	"console_title_style": "template",
+	"console_title_template": "{{ .Shell }} in {{ .Folder }}",
+	"final_space": false
+  }
+  

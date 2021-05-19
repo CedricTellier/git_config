@@ -1,6 +1,7 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt jandedobbeleer
+Set-PoshPrompt -Theme ~/.cedric.omp.json
+
 
 function Get-GitStatus() {  
 	& git status
