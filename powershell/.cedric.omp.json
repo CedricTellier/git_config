@@ -34,9 +34,8 @@
 			"foreground": "#193549",
 			"powerline_symbol": "",
 			"properties": {
-			  "ahead_and_behind_color": "#FFFF00",
-			  "ahead_color": "#ff9248",
-			  "behind_color": "#FFFF00",
+			  "ahead_color": "#FFFF00",
+			  "behind_color": "#ff9248",
 			  "display_stash_count": true,
 			  "display_upstream_icon": true,
 			  "local_changes_color": "#FFFF00",
