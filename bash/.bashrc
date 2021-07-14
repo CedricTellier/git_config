@@ -59,13 +59,14 @@ alias gcp='gitcommitpush'
 alias reload='source ~/.bashrc'
 
 gitcommit() {
-  git add .
-  echo "$*"
   message="$*"
+  git add .
   git commit -m "$message"
 }
 
 gitcommitpush() {
-  gitcommit
+  message="$*"
+  git add .
+  git commit -m "$message"
   git push
 }
