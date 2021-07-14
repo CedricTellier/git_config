@@ -1,3 +1,4 @@
+#!/bin/bash
 # Path to your oh-my-bash installation.
 export OSH=/home/noob/.oh-my-bash
 OSH_THEME="agnoster"
@@ -49,9 +50,22 @@ alias gb='git branch'
 alias gl='git log'
 alias ga='git add .'
 alias gp='git pull'
-alias gcp='git commit -m "$*" && git push'
-alias gc='git commit -m "$*"'
 alias gd='git diff'
 alias grh='git reset --hard'
 alias grmc='git add . && git rm -r --cached . && git add .gitignore && git add . && git status'
 alias python='python3.9'
+alias gc='gitcommit'
+alias gcp='gitcommitpush'
+alias reload='source ~/.bashrc'
+
+gitcommit() {
+  git add .
+  echo "$*"
+  message="$*"
+  git commit -m "$message"
+}
+
+gitcommitpush() {
+  gitcommit
+  git push
+}
